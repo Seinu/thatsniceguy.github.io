@@ -33,31 +33,93 @@
     color: white;
     text-align: center;
     }
+
+    /* global setting to all tags inside <body> */
+    body {
+      color: #fff; /* short hand for #ffffff */
+      background-color: #000000;
+      width: 100%;
+    }
+
+    /* global setting for all <a> tags(url links) to have pink text */
+    a {
+      color: #E872E2;
+    }
+    h1 {
+      text-align: center; /* normal way of centering text with css can also use IDs via #id-name 
+      classes probably are not supported */
+    }
+    /* set td(table columns) to 33% width */
+    td {
+      width: 33%;
+    }
+
+    table {
+      width: 100%;
+    }
+/* nakes website 100% height **broken** */
+    #fullheight {
+      height: 100%;
+    }
+
+    #footer {
+      text-align: center;
+    }
   </style>
 
 </head>
 
   <body style="background-color:black;">
+    <table>
 
-    <h1 class="center" style="color:#FFFFFF";>ThatsNiceGuy's Website</h1>
-    <p style="color:#FFFFFF";>This website is nowhere near complete but I plan to make it replace my current site.<p>
-    <h2 style="color:#FFFFFF";>Links</h2>
-    <p style="color:#FFFFFF";>Visit the <a href="https://ThatsNiceGuy.weebly.com" style="color:#E872E2;">main website</a></p>
-    <p style="color:#FFFFFF";>Visit my <a href="https://github.com/ThatsNiceGuy" style="color:#E872E2;">GitHub</a></p>
-    <h2 style="color:#FFFFFF";>iOS Shortcuts</h2>
-    <p style="color:#FFFFFF";>All the ios shortcuts I've made and decide to upload are here</p>
-    <h3 style="color:#FFFFFF";>UPDATE! - <a href="https://thatsniceguy.github.io/shortcuts/gifframesep.html" style="color:#E872E2;">GIFFrameSep</a> - a shortcut that extracts individual frames from a GIF</p>
-    <h3 style="color:#FFFFFF";><a href="https://thatsniceguy.github.io/shortcuts/makewifiqrcode.html" style="color:#E872E2;">Make WiFi QR Code</a> - a shortcut to help you quickly generate WiFi QR codes that can be shared or exported</p>
-    <h3 style="color:#FFFFFF";><a href="https://thatsniceguy.github.io/shortcuts/wtfismyip.html" style="color:#E872E2;">WTFIsMyIP</a> - a shortcut to retrieve data from WTFIsMyIP and show it in the standard iOS UI style</p>
+      <!-- title area -->
+      <tr>
+        <td></td>
+        <!-- replace inside <td> tags any changes you want h1 will still work from above CSS -->
+        <td><h1><img src="/images/Title.gif" alt="" srcset=""></h1></td>
+        <td></td>
+      </tr>
+      <!-- <tr> is a table row td is a table column each <td> is set to 33% width to "center" -->
+        <!-- set id for making this tr(table row) 100% height -->
+      <tr id="fullheight"> 
+        <td></td>
+        <td>
+          <!-- insert content here **start** -->
+    <p>This website is nowhere near complete but I plan to make it replace my current site.<p>
+      <h2>Links</h2>
+      <p>Visit the <a href="https://ThatsNiceGuy.weebly.com" style="color:#E872E2;">main website</a></p>
+      <p>Visit my <a href="https://github.com/ThatsNiceGuy" style="color:#E872E2;">GitHub</a></p>
+      <h2>iOS Shortcuts</h2>
+      <p>All the ios shortcuts I've made and decide to upload are here</p>
+      <h3>UPDATE! - <a href="https://thatsniceguy.github.io/shortcuts/gifframesep.html">GIFFrameSep</a> - a shortcut that extracts individual frames from a GIF</p>
+      <h3><a href="https://thatsniceguy.github.io/shortcuts/makewifiqrcode.html">Make WiFi QR Code</a> - a shortcut to help you quickly generate WiFi QR codes that can be shared or exported</p>
+      <h3><a href="https://thatsniceguy.github.io/shortcuts/wtfismyip.html">WTFIsMyIP</a> - a shortcut to retrieve data from WTFIsMyIP and show it in the standard iOS UI style</p>
+        
+      <!-- insert content here **end** -->
+      </td>
+        <td></td>
+      </tr>
+
+      <!-- footer content -->
+      <tr>
+        <td></td>
+        <!-- footer td start -->
+        <td id="footer">
+          <p>ThatsNiceGuy's Website</p>
+          <p style="color:#FFFFFF";>This website is open source. See it <a href="https://github.com/ThatsNiceGuy/thatsniceguy.github.io" style="color:#E872E2;">here</a>.</p>
+        </td>
+        <!-- footer td end -->
+        <td></td>
+      </tr>
+    </table>
+    <!-- all inline styles are moved inside <style> eternal CSS probably doesn't work with ie6 -->
     
-    <p><br><br><br><br><br><br></p>
-
+    
   </body>
 
   <footer>
     <div class="footer">
-      <p>ThatsNiceGuy's Website</p>
-      <p style="color:#FFFFFF";>This website is open source. See it <a href="https://github.com/ThatsNiceGuy/thatsniceguy.github.io" style="color:#E872E2;">here</a>.</p>
+      
     </div>
   </footer>
 
